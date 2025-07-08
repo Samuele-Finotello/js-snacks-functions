@@ -9,13 +9,23 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
-const saluto = (data, saluto, ora) => {
+const oraSaluto = (data, saluto, ora) => {
   data = new Date();
   ora = data.getHours();
+  if (ora > 2 && ora <= 13) {
+    return `Buongiorno ${name}`;
+  }
+  else {
+    if (ora > 13 && ora <= 17) {
+      return `Buon pomeriggio ${name}`;
+    }
+    else {
+      return `Buonasera ${name}`;
+    }
+  }
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
