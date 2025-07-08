@@ -6,6 +6,10 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 // Dichiara la funzione qui.
 const iniziali = iniziali => {
   iniziali = [];
+  for (let i = 0; i < names.length; i++) {
+    iniziali.push(names[i].charAt(0));
+  }
+  return iniziali;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
