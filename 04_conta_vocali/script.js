@@ -18,6 +18,7 @@ const vocali = (contaVocali, vocaliPresenti) => {
 }
 
 // Invoca la funzione qui e stampa il risultato in console
+console.log(vocali());
 
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
