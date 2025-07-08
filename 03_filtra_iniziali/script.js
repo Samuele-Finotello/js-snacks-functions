@@ -13,11 +13,15 @@ const iniziale = (nomiLettera, lettera, letteraUp) => {
       nomiLettera.push(names[i]);
     }
   }
-  return nomiLettera;
+  if (nomiLettera.length === 0) {
+    return `Non c'e' nessun nome con la lettera ${lettera}`;
+  }
+  else
+    return nomiLettera;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-
+console.log(iniziale());
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
