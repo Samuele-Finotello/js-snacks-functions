@@ -26,6 +26,7 @@ const oraSaluto = (data, saluto, ora) => {
 }
 
 // Invoca la funzione qui e stampa il risultato in console
+console.log(oraSaluto());
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
