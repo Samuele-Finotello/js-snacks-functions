@@ -4,7 +4,9 @@ const word = 'javascript';
 
 
 // Dichiara la funzione qui.
-
+const vocali = (vocali,) => {
+  vocali = 0;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
