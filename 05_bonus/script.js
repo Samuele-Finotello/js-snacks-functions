@@ -9,7 +9,10 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
-
+const saluto = (data, saluto, ora) => {
+  data = new Date();
+  ora = data.getHours();
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
