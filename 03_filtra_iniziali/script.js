@@ -4,9 +4,16 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-const iniziale = (nomiLettera, lettera) => {
+const iniziale = (nomiLettera, lettera, letteraUp) => {
   nomiLettera = [];
   lettera = prompt('Inserisci l\'iniziale da cercare');
+  letteraUp = lettera.toUpperCase();
+  for (let i = 0; i < names.length; i++) {
+    if (names[i].charAt(0) === letteraUp) {
+      nomiLettera.push(names[i]);
+    }
+  }
+  return nomiLettera;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
