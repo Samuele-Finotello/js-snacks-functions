@@ -13,6 +13,6 @@ const iniziali = iniziali => {
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-
+console.log(iniziali());
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
