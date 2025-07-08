@@ -4,7 +4,10 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+const iniziale = (nomiLettera, lettera) => {
+  nomiLettera = [];
+  lettera = prompt('Inserisci l\'iniziale da cercare');
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
