@@ -4,21 +4,21 @@ const word = 'javascript';
 
 
 // Dichiara la funzione qui.
-const vocali = (contaVocali, vocaliPresenti) => {
+const vocali = parola => {
   contaVocali = 0;
   vocaliPresenti = [];
-  for (let i = 0; i < word.length; i++) {
-    if (word[i] === 'a' || word[i] === 'e' || word[i] === 'i' || word[i] === 'o' || word[i] === 'u') {
+  for (let i = 0; i < parola.length; i++) {
+    if (parola[i] === 'a' || parola[i] === 'e' || parola[i] === 'i' || parola[i] === 'o' || parola[i] === 'u') {
       contaVocali++;
-      vocaliPresenti.push(word[i]);
+      vocaliPresenti.push(parola[i]);
     }
   }
   vocaliPresenti.toString();
-  return contaVocali + ' (' + vocaliPresenti + ')';
+  console.log(`${contaVocali} (${vocaliPresenti})`);
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(vocali());
+vocali(word);
 
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
