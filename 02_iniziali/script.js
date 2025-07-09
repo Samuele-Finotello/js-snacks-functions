@@ -7,7 +7,7 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 const iniziali = iniziali => {
   iniziali = [];
   for (let i = 0; i < names.length; i++) {
-    iniziali.push(names[i].charAt(0));
+    iniziali.push(names[i].charAt(0)); //si poteva anche fare: iniziali.push(names[i][0]);
   }
   return iniziali;
 }
