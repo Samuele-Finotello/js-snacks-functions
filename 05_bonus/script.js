@@ -9,24 +9,41 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
-const oraSaluto = (data, ora) => {
+const oraSalutoArrow = persona => {
   data = new Date();
   ora = data.getHours();
   if (ora > 2 && ora <= 13) {
-    return `Buongiorno ${name}`;
+    console.log(`Buongiorno ${persona}`);
   }
   else {
     if (ora > 13 && ora <= 17) {
-      return `Buon pomeriggio ${name}`;
+      console.log(`Buon pomeriggio ${persona}`);
     }
     else {
-      return `Buonasera ${name}`;
+      console.log(`Buonasera ${persona}`);
+    }
+  }
+}
+
+function oraSaluto(persona) {
+  data = new Date();
+  ora = data.getHours();
+  if (ora > 2 && ora <= 13) {
+    console.log(`Buongiorno ${persona}`);
+  }
+  else {
+    if (ora > 13 && ora <= 17) {
+      console.log(`Buon pomeriggio ${persona}`);
+    }
+    else {
+      console.log(`Buonasera ${persona}`);
     }
   }
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(oraSaluto());
+oraSalutoArrow(name);
+oraSaluto(name);
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
