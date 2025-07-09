@@ -9,7 +9,7 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
-const oraSaluto = (data, saluto, ora) => {
+const oraSaluto = (data, ora) => {
   data = new Date();
   ora = data.getHours();
   if (ora > 2 && ora <= 13) {

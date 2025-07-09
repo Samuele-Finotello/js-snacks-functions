@@ -4,12 +4,9 @@ const userName = 'Mario';
 
 
 // Dichiara la funzione qui.
-const saluto = saluto => {
-  saluto = prompt('Scrivi un saluto a Mario');
-  return saluto + ' ' + userName;
-}
+const salutaMario = (nome) => console.log(`Ciao ${nome}`);
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(saluto());
+salutaMario(userName);
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
