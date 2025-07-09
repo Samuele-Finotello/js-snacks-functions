@@ -4,24 +4,24 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-const iniziale = (nomiLettera, lettera, letteraUp) => {
+const iniziale = array => {
   nomiLettera = [];
   lettera = prompt('Inserisci l\'iniziale da cercare');
-  letteraUp = lettera.toUpperCase();
-  for (let i = 0; i < names.length; i++) {
-    if (names[i].charAt(0) === letteraUp) {
-      nomiLettera.push(names[i]);
+  letteraLow = lettera.toLowerCase();
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].charAt(0).toLowerCase() === letteraLow) {
+      nomiLettera.push(array[i]);
     }
   }
   if (nomiLettera.length === 0) {
-    return `Non c'e' nessun nome con la lettera ${lettera}`;
+    console.log(`Non c'e' nessun nome con la lettera ${lettera}`);
   }
   else
-    return nomiLettera;
+    console.log(nomiLettera);
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(iniziale());
+iniziale(names);
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
