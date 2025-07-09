@@ -4,15 +4,15 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-const iniziali = iniziali => {
-  iniziali = [];
-  for (let i = 0; i < names.length; i++) {
-    iniziali.push(names[i].charAt(0)); //si poteva anche fare: iniziali.push(names[i][0]);
+const inizialiNomi = array => {
+  let iniziali = [];
+  for (let i = 0; i < array.length; i++) {
+    iniziali.push(array[i].charAt(0)); //si poteva anche fare: iniziali.push(names[i][0]);
   }
-  return iniziali;
+  console.log(iniziali);
 }
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(iniziali());
+inizialiNomi(names);
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
